@@ -1,0 +1,74 @@
+.topbar {
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  /* membuat navbar fixed dan posisi z index nya selalu paling atas */
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  /* /membuat navbar fixed */
+}
+
+.topbarWrapper {
+  height: 100%;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topRight {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 30px;
+  color: darkblue;
+  cursor: pointer;
+}
+
+.topBarIconsContainer {
+  position: relative;
+  cursor: pointer;
+  margin-right: 10px;
+  color: #555;
+}
+
+.topIconBadge {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: -5px;
+  right: 5px;
+  color: white;
+  background-color: red;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+}
+
+.topAvatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.arrowLeft {
+  margin-left: 15px;
+}
+
+.arrowLeft:hover {
+  cursor: pointer;
+}
+
+/* letakan media query di akhir */
+@media screen and (max-width: 480px) {
+  .logo {
+    font-size: 20px;
+  }
+}
